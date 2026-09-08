@@ -10,7 +10,6 @@ Scrapes MagicBricks → cleans it properly → figures out what drives price →
 
 ## ⚡ Highlights
 
-- 🐛 Found & fixed a scrape bug that priced listings both at ₹0 and ₹1 quadrillion
 - 🚩 Sketchy prices flagged, not silently dropped or trusted
 - 📍 Locality-aware model, small-sample areas don't get overconfident estimates
 - ✅ Cross-validated (5-fold), not a lucky single split
