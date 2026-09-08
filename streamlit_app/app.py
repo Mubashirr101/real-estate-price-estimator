@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="Mumbai Real Estate Price Estimator", page_icon="🏠", layout="centered")
+st.set_page_config(page_title="Real Estate Price Estimator", page_icon="🏠", layout="centered")
 
 
 @st.cache_resource
@@ -33,9 +33,9 @@ def format_inr(value):
     return f"₹{value:,.0f}"
 
 
-st.title("🏠 Mumbai Real Estate Price Estimator")
+st.title("🏠 Real Estate Price Estimator")
 st.caption(
-    "Trained on cleaned MagicBricks listings. This gives a directional estimate, "
+    "Trained on cleaned MagicBricks listings in Mumbai. This gives a directional estimate, "
     "not a valuation, accuracy varies a lot by locality, see the note at the bottom."
 )
 
@@ -73,8 +73,8 @@ carpet_lo, carpet_hi = artifact["carpet_area_range"]
 carpet_area = st.slider(
     "Carpet area (sqft)",
     min_value=150,
-    max_value=6000,
-    value=650,
+    max_value=2000,
+    value=550,
     step=10,
     help=f"Training data ranged from {carpet_lo:.0f} to {carpet_hi:.0f} sqft, bounded here to a practical range.",
 )
