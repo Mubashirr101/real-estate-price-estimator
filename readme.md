@@ -6,7 +6,12 @@
 
 Scrapes MagicBricks → cleans it properly → figures out what drives price → ships a live estimator.
 
-**[🔗 sqft.mubashirshaikh.com](https://sqft.mubashirshaikh.com)**
+
+**[sqft.mubashirshaikh.com](https://sqft.mubashirshaikh.com)**
+
+## Screenshot
+
+![](preview-imgs/sqft.png)
 
 ## ⚡ Highlights
 
